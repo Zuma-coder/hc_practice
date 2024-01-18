@@ -35,7 +35,7 @@ def get_blank(first_day)
   end
 end
 
-puts "     #{month}月 #{year}"
+puts "#{month}月 #{year}".center(20)
 puts '月 火 水 木 金 土 日'
 (1..last_day.day).each do |i|
   # 初日のみ空白で位置調整
