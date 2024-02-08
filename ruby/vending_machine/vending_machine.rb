@@ -31,7 +31,7 @@ class VendingMachine
 
     @stock[juice] -= 1
     @total_sales += juice.price
-    suica.balance -= juice.price
+    suica.pay(juice.price)
   end
 end
 
