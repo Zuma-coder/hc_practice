@@ -81,8 +81,9 @@
 # 0 or more      *
 # 1 or more      +
 
-users *--1 tweets
-users *--* users {label: "relationships"}
+users 1--* tweets
+users 1--* relationships {label: "following"}
+users 1--* relationships {label: "followed"}
 users 1--* likes
 users 1--* bookmarks
 users 1--* retweets
